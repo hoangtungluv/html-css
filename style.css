@@ -1,3 +1,14 @@
-h3 {
-  color: green;
+img {
+  transition: 1.5s;
+}
+
+input:checked ~ img {
+  /*!. Biến mất khỏi giao diện, không hỗ trợ animation */
+  /* display: none; */
+
+  /* 2.Làm mờ đi, và ko tương tác dc, có hỗ trợ animation */
+  opacity: 0.1;
+  visibility: hidden;
+  /* 3.Biến mất khỏi giao diện nhưng vẫn chiếm vị trí */
+  /* visibility: hidden;*/
 }
