@@ -1,89 +1,114 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-<<<<<<< HEAD
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bai thuc hanh 01</title>
+</head>
+<body bgcolor="#ccc">
+    <!-- Bài 1
+    <h1>Headline level 1</h1>
+    <h2>Headline level 2</h2>
+    <h3>Headline level 3</h3>
+    <h4>Headline level 4</h4>
+    <h5>Headline level 5</h5>
+    <h6>Headline level 6</h6>
 
-    <title>Bài tập HTML04</title>
-  </head>
+    <p>Đây là một đoạn văn bản, mỗi đoạn văn bảng sẽ được hiển thị một dòng riêng và được khai báo bằng thẻ <code>&lt;p&gt;</code></p>
+    <p>Đây cũng là một đoạn văn bản</p> -->
 
-  <body>
-    <a href="http://tuhoc.cc/">Bài tập HTML04</a>
-    <!-- 1.Dùng css inline Cho tiêu đề color: red-->
-    <h1 style="color: red">Danh sách giáo viên tiêu biểu tại tuhoc.cc</h1>
+    <!-- Bài 2 a
+    <p>Trong thẻ HTML có thể định dạng chữ viết như <strong>in đậm,</strong> hoặc <i>in nghiêng, cũng có thể <u>gạch chân</u>. Một số trường hợp có thể <strike>gạch ngang </strike> chữ viết</i></p>
+    <hr>
+    <p>Ở trên là đoạn văn được khai báo bằng thẻ <code>&lt;hr&gt;</code></p>
+    <p>Nếu nhấn mạnh gì có thể <em>viết như thế này</em></p> -->
 
-    <!-- 2.Dùng internal css  Cho tên thầy hiệu trưởng màu blue color: blue-->
-    <h2>Thầy hiệu trưởng Học Viện tuhoc.cc: Chân Tử Đan</h2>
-    <img
-      src="./img/hieutruong.jpg"
-      alt="hiệu trưởng Học Viện tuhoc.cc"
-      width="300"
-    />
-    <style>
-      h2 {
-        color: blue;
-      }
-    </style>
+    <!-- 2b
+    <quote>
+        <p>"Ai cũng phải đi du lịch để học hỏi."</p>
+        <cite>Mark Twain.</cite>
+    </quote> -->
 
-    <!-- 3.Dùng external css Cho tên giáo viên C++, giáo viên front end màu: color: green -->
-    <h3>Giáo viên frontend: An Phong</h3>
-    <img
-      src="./img/giao-vien-frontend.jpg"
-      alt="Giáo viên frontend: An Phong"
-      width="300"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <h3>Giáo viên C++: Tom Cruise"</h3>
-    <img
-      src="./img/giao-vien-c.jpg"
-      alt="Giáo viên C++: Tom Cruise"
-      width="300"
-    />
-    <link rel="stylesheet" href="style.css" />
-=======
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bài học multi page Website</title>
-  </head>
+    <!-- 2c
+    <pre>Thẻ <mark>pre</mark> được dùng để đăng một câu đối thoại hoặc in một đoạn mã để cho dễ phân biệt với các văn bản thông thường</pre> phân biệt với các nội dung văn bản khác -->
 
-  <body>
-    <!-- Thêm các link điều hướng -->
-    <!-- 1. Điều hướng về trang chủ -->
-    <a href="./">Home</a>
+    <!-- 2d
+    <img src="images/images.jpg" alt="Hình ảnh học viện nông nghiệp"> -->
 
-    <!-- 2. Điều hướng đến contact.html //sd tương đối-->
-    <a href="./more-info/contact.html">Contact</a>
+    2 e
+    <table cellpadding="1", cellspacing="4", border="1">
+        <tr>
+           <th>Ten nhan vien</th>
+           <th>Luong</th>
+        </tr>
 
-    <!-- 3. Điều hướng đến my-skill.html  // sd tương đối-->
-    <a href="./more-info/my-skill.html">My skill</a>
+        <tr>
+            <td>Minh Chinh</td>
+            <td>5000</td>
+        </tr>
 
-    <h1>Welcome to My Website!</h1>
-    <hr />
-    <h2>Lê Hoàng Tùng</h2>
-    <p>Agricultural University Student</p>
-    <hr />
+        <tr>
+            <td>Duy Manh</td>
+            <td>7000</td>
+        </tr>
+    </table>
 
-    <!-- Thêm hình ảnh tuhoc.cc.jpg và khi click chuột sẽ điều hướng đến contact.html  -->
-    <a href="./more-info/contact.html"
-      ><img src="./assets/images/vietnam.jpg" alt="intro"
-    /></a>
+    
+    <table border="1" bordercolor="green" bgcolor="yellow">
+        <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+        </tr>
 
-    <h2>About me</h2>
-    <p>
-      Xin chào! Tôi là một sinh viên sáng tạo và đầy nhiệt huyết, mang trong
-      mình niềm đam mê với máy tính và khả năng tạo ra những trải nghiệm độc đáo
-      và gây ấn tượng. Với việc nắm bắt xu hướng và sự phát triển, tôi luôn tìm
-      kiếm cách để đưa ra những giải pháp sáng tạo và ứng dụng độc đáo trong mọi
-      dự án.
-    </p>
-    <p>
-      Tôi đảm bảo rằng mỗi dự án sẽ được thực hiện với sự chính xác và sự đổi
-      mới. Tôi không chỉ đơn thuần là một người sáng tạo, mà còn là một người
-      lãnh đạo đội ngũ, đảm bảo rằng mọi thành viên đều được truyền cảm hứng và
-      tận dụng tối đa khả năng của họ để mang lại kết quả xuất sắc.
-    </p>
-    <hr />
->>>>>>> f45b0bb5d57dcc743cacfd905c67686f0ec22e6d
-  </body>
+        <tr>
+            <td rowspan="2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
+        </tr>
+
+        <tr>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+        </tr>
+
+        <tr>
+            <td colspan="3">Row 3 Cell 1</td>
+        </tr>
+    </table>
+
+    <!-- <table border="1" width="400" height="150", bordercolor="green">
+        <tr>
+            <td>Row 1, Column 1</td>
+            <td>Row 1, Column 2</td>
+        </tr>
+
+        <tr>
+            <td>Row 2, Column 1</td>
+            <td>Row 2, Column 2</td>
+        </tr>
+    </table> -->
+
+    <!-- <ul>
+        <li type="square">Tong quan ve HTML</li>
+        <li type="disc">Tong quan ve CSS</li>
+        <li type="circle">CSS voi layout</li>
+        <li>javascript va form</li>
+    </ul>
+
+    <ol type="1", start="2">
+        <li>Nguyen Van 1</li>
+        <li>Nguyen Van 2</li>
+        <li>Nguyen Van 3</li>
+        <li>Nguyen Van 4</li>
+    </ol> -->
+
+
+
+
+
+
+
+</body>
 </html>
