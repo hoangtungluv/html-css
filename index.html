@@ -1,114 +1,36 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Bai thuc hanh 01</title>
+<meta charset="UTF-8">
+<title>Thêm sách</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 </head>
-<body bgcolor="#ccc">
-    <!-- Bài 1
-    <h1>Headline level 1</h1>
-    <h2>Headline level 2</h2>
-    <h3>Headline level 3</h3>
-    <h4>Headline level 4</h4>
-    <h5>Headline level 5</h5>
-    <h6>Headline level 6</h6>
+<body>
 
-    <p>Đây là một đoạn văn bản, mỗi đoạn văn bảng sẽ được hiển thị một dòng riêng và được khai báo bằng thẻ <code>&lt;p&gt;</code></p>
-    <p>Đây cũng là một đoạn văn bản</p> -->
+<h1 class="title">Thêm sách mới</h1>
 
-    <!-- Bài 2 a
-    <p>Trong thẻ HTML có thể định dạng chữ viết như <strong>in đậm,</strong> hoặc <i>in nghiêng, cũng có thể <u>gạch chân</u>. Một số trường hợp có thể <strike>gạch ngang </strike> chữ viết</i></p>
-    <hr>
-    <p>Ở trên là đoạn văn được khai báo bằng thẻ <code>&lt;hr&gt;</code></p>
-    <p>Nếu nhấn mạnh gì có thể <em>viết như thế này</em></p> -->
+<div class="container">
+<form  action="AddBookServlet" method="post">
 
-    <!-- 2b
-    <quote>
-        <p>"Ai cũng phải đi du lịch để học hỏi."</p>
-        <cite>Mark Twain.</cite>
-    </quote> -->
+<label>Mã sách (Id sách):</label>
+<input type="text" id="idsach" name="idsach" placeholder="Không được để trống" required>
 
-    <!-- 2c
-    <pre>Thẻ <mark>pre</mark> được dùng để đăng một câu đối thoại hoặc in một đoạn mã để cho dễ phân biệt với các văn bản thông thường</pre> phân biệt với các nội dung văn bản khác -->
+<label>Tên sách:</label>
+<input type="text" id="tensach" name="tensach" placeholder="Không được để trống" required>
 
-    <!-- 2d
-    <img src="images/images.jpg" alt="Hình ảnh học viện nông nghiệp"> -->
+<label>Tác giả:</label>
+<input type="text" id="tacgia" name="tacgia" placeholder="Không được để trống" required>
 
-    2 e
-    <table cellpadding="1", cellspacing="4", border="1">
-        <tr>
-           <th>Ten nhan vien</th>
-           <th>Luong</th>
-        </tr>
+<label>Giá:</label>
+<input type="number" id="gia" name="gia" min="0" step="0.01" placeholder="Nhập giá (số)" required>
 
-        <tr>
-            <td>Minh Chinh</td>
-            <td>5000</td>
-        </tr>
+<label>Ưu tiên:</label>
+<input type="number" id="uutien" name="uutien" min="1" max="2" placeholder="Chỉ được nhập 1 hoặc 2">
 
-        <tr>
-            <td>Duy Manh</td>
-            <td>7000</td>
-        </tr>
-    </table>
-
-    
-    <table border="1" bordercolor="green" bgcolor="yellow">
-        <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-            <th>Column 3</th>
-        </tr>
-
-        <tr>
-            <td rowspan="2">Row 1 Cell 1</td>
-            <td>Row 1 Cell 2</td>
-            <td>Row 1 Cell 3</td>
-        </tr>
-
-        <tr>
-            <td>Row 2 Cell 2</td>
-            <td>Row 2 Cell 3</td>
-        </tr>
-
-        <tr>
-            <td colspan="3">Row 3 Cell 1</td>
-        </tr>
-    </table>
-
-    <!-- <table border="1" width="400" height="150", bordercolor="green">
-        <tr>
-            <td>Row 1, Column 1</td>
-            <td>Row 1, Column 2</td>
-        </tr>
-
-        <tr>
-            <td>Row 2, Column 1</td>
-            <td>Row 2, Column 2</td>
-        </tr>
-    </table> -->
-
-    <!-- <ul>
-        <li type="square">Tong quan ve HTML</li>
-        <li type="disc">Tong quan ve CSS</li>
-        <li type="circle">CSS voi layout</li>
-        <li>javascript va form</li>
-    </ul>
-
-    <ol type="1", start="2">
-        <li>Nguyen Van 1</li>
-        <li>Nguyen Van 2</li>
-        <li>Nguyen Van 3</li>
-        <li>Nguyen Van 4</li>
-    </ol> -->
-
-
-
-
-
-
+<button type="submit" onClick="kiemTra()">Thêm</button>
+</form>
+</div>
 
 </body>
 </html>
